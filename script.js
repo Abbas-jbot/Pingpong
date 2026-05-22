@@ -51,7 +51,7 @@ function moveBall() {
   ballY += ballSpeedY;
 
   if (ballY <= 0 || ballY >= canvas.height) {
-    ballSpeedY *= -1;
+    ballSpeedY *= 2;
   }
 
   // Player paddle collision
@@ -60,7 +60,7 @@ function moveBall() {
     ballY > playerY &&
     ballY < playerY + paddleHeight
   ) {
-    ballSpeedX *= -1;
+    ballSpeedX *= 2;
   }
 
   // AI paddle collision
@@ -69,7 +69,7 @@ function moveBall() {
     ballY > aiY &&
     ballY < aiY + paddleHeight
   ) {
-    ballSpeedX *= -1;
+    ballSpeedX *= 2;
   }
 
   // Reset ball
