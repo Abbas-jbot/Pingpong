@@ -24,8 +24,8 @@ let aiY = canvas.height / 2 - paddleHeight / 2;
 let ballX = canvas.width / 2;
 let ballY = canvas.height / 2;
 
-let ballSpeedX = 5;
-let ballSpeedY = 4;
+let ballSpeedX = 3;
+let ballSpeedY = 2;
 
 const keys = {};
 
